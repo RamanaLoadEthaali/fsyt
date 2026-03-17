@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter-container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <div class="input-group">
+                <input type="number" id="input-number" class="input-field" value="20">
+                <button id="convert-btn" class="convert-btn">Convert</button>
+            </div>
+        </header>
+
+        <!-- Results Section -->
+        <main class="results-section">
+            <!-- Length Card -->
+            <div class="result-card">
+                <h2 class="card-title">Length (Meter/Feet)</h2>
+                <p id="length-results" class="conversion-text">
+                    <span class="unit-input">20</span> meters = <span id="meter-to-feet" class="result-number">65.616</span> feet 
+                    <span class="pipe-separator">|</span> 
+                    <span class="unit-input">20</span> feet = <span id="feet-to-meter" class="result-number">6.096</span> meters
+                </p>
+            </div>
+
+            <!-- Volume Card -->
+            <div class="result-card">
+                <h2 class="card-title">Volume (Liters/Gallons)</h2>
+                <p id="volume-results" class="conversion-text">
+                    <span class="unit-input">20</span> liters = <span id="liters-to-gallons" class="result-number">5.283</span> gallons 
+                    <span class="pipe-separator">|</span> 
+                    <span class="unit-input">20</span> gallons = <span id="gallons-to-liters" class="result-number">75.708</span> liters
+                </p>
+            </div>
+
+            <!-- Mass Card -->
+            <div class="result-card">
+                <h2 class="card-title">Mass (Kilograms/Pounds)</h2>
+                <p id="mass-results" class="conversion-text">
+                    <span class="unit-input">20</span> kilos = <span id="kilos-to-pounds" class="result-number">44.092</span> pounds 
+                    <span class="pipe-separator">|</span> 
+                    <span class="unit-input">20</span> pounds = <span id="pounds-to-kilos" class="result-number">9.072</span> kilos
+                </p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
